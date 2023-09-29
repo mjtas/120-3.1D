@@ -1,0 +1,94 @@
+/* Styling for header component */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    background-color: #0E6251;
+    max-width: 960px;
+  }
+  
+  /* Styling for header text content */
+  .header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 12px;
+  }
+  
+  /* Styling for header unordered list */
+  .header-ul {
+    display: flex;
+    /* Removing list style from unordered list */
+    list-style-type: none;
+    padding: 0;
+    gap: 12px;
+  }
+  
+  /* Styling for the header link toggle button */
+  .header-link-toggle {
+      display: none;
+    }
+
+  /* Styling for router link items */
+  li {
+    margin: 0;
+    padding: 0;
+    }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* For screens smaller than 1023px (tablets) */
+    @media (max-width: 1023px) {
+      .header-ul {
+        text-align: center;
+        max-width: auto;
+    }
+  }
+
+  /* For screens smaller than 768px (phones) */
+  @media (max-width: 768px) {
+    /* Adjust header alignment */
+    .header {
+      justify-content: space-between;
+  }
+    /* Larger gap between left and right header text items as alignment changes to columns */ 
+    .header-text {
+      gap: 64px;
+    }
+    
+    /* Display the header link toggle button */
+    .header-link-toggle {
+      display: block;
+      border: none;
+      background-color: #0E6251;
+      cursor: pointer;
+    }
+  
+    /* Adjust alignment and display for header lists */
+    .header-ul-left,
+    .header-ul-right {
+      flex-direction: column;
+      gap: 4vw;
+      text-align: center;
+      justify-content: center;
+      display: none;
+    }
+  
+    /* Display header links when the toggle button is active */
+    .displayHeaderLinks {
+      display: flex;
+    }
+    
+    .header-ul-left.displayHeaderLinks,
+    .header-ul-right.displayHeaderLinks {
+      display: flex;
+    }
+  }
