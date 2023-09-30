@@ -5,7 +5,7 @@ const app = express();
 const port = 3000; // Choose a port number
 
 app.use(cors({
-  origin: 'http://localhost:8084'
+  origin: 'http://localhost:8080'
 }));
 
 const { MongoClient, ServerApiVersion, Int32 } = require('mongodb');

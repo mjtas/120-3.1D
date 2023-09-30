@@ -97,7 +97,7 @@ export default {
       
       if (typeof google === 'undefined') {
         const script = document.createElement('script');
-        script.src = `https://maps.googleapis.com/maps/api/js?key=https://maps.googleapis.com/maps/api/js?key=AIzaSyDeHpZjP8NDkgFWGMC-Ss90SO5rTMUrTF8&&callback=initMap`;
+        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDeHpZjP8NDkgFWGMC-Ss90SO5rTMUrTF8&&callback=initMap`;
         script.defer = true;
         script.async = true;
         script.onload = this.initMap;
