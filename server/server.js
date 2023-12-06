@@ -37,7 +37,6 @@ run().catch(console.dir);
 
 // Set up Schema and Model for collection
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://mj_db:Vmp2w97OOVvb0zcK@cluster0.efjqhqn.mongodb.net/", {dbName: 'HiddenValley'}, {collection: 'workshops'});
 const {Schema } = mongoose;
 
 const mySchema = new Schema({
